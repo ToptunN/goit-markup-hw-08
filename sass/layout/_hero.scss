@@ -1,0 +1,24 @@
+.hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.hero__overlay {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #C4C4C4;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/index.photos/hero-bcg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero__text {
+    width: 60%;
+    margin: 0 auto 30px;
+    @include font(900, 44px, 60px, 0.06em);
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--second-text-color);
+}

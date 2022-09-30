@@ -1,0 +1,19 @@
+footer {
+    background-color: var(--bcgthird);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-right: auto;
+}
+
+footer .logo {
+    display: block;
+    margin-bottom: 20px;
+    margin-right: 0;
+    font-family: 'Raleway';
+    @include font(700, 26px, 30.52px, 0.03em);
+}
+.footer-split {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
