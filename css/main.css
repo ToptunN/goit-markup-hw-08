@@ -173,6 +173,7 @@ body {
 
 .mobile-menu {
   padding-top: 48px;
+  padding-bottom: 301px;
 }
 
 .mobile-menu__labels:not(:last-child) {
@@ -208,6 +209,10 @@ body {
   fill: var(--accent-color);
 }
 
+.phone-email {
+  margin-bottom: 64px;
+}
+
 .phone-email__contacts:not(:last-child) {
   margin-bottom: 32px;
 }
@@ -226,6 +231,21 @@ body {
   line-height: 1.1666666667;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
+}
+
+.socials-labels {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.socials-labels__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2222222222;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
 }
 
 .modal-button {

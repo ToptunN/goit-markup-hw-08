@@ -21,6 +21,7 @@
 }
 .mobile-menu{
     padding-top: 48px;
+    padding-bottom: 301px;
     }
 .mobile-menu__labels:not(:last-child){
     margin-bottom: 32px;
@@ -54,6 +55,9 @@
             fill: var(--accent-color);
         }
 }
+.phone-email{
+    margin-bottom: 64px;
+}
 .phone-email__contacts:not(:last-child){
 margin-bottom: 32px;
 }
@@ -64,4 +68,15 @@ margin-bottom: 32px;
 .phone-email__email {
     @include font(500, 24px, 28px, 0.02em);
     color: var(--main-text-color);
+}
+.socials-labels{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;        
+}
+.socials-labels__link{
+    @include font(500,18px,22px,00.02em);
+    color: var(--accent-color);
+
 }
