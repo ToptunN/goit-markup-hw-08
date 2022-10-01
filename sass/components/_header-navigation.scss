@@ -15,10 +15,6 @@
 .mobile-menu-btn .mobile-menu-btn__open{
     display: block;
 }
-.mobile-menu-btn .mobile-menu-btn__close {
-    display: none;
-}
-
 .navigation {
     display: flex;
     align-items: center;
@@ -30,6 +26,7 @@
 .email-phone{
     display: none;
 }
+
 // .navigation__logo {
 // margin-right: 93px;
 // }
