@@ -1,0 +1,39 @@
+.mobile-menu-window{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height:100%;
+    background-color: teal;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+.mobile-menu-window .is-open{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+.mobile-menu-container{
+    position: relative;
+    padding-left: 40px;
+}
+.mobile-menu{
+    padding-top: 48px;
+    }
+.mobile-menu__labels:not(:last-child){
+    margin-bottom: 32px;
+}    
+.mobile-menu__close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: transparent;
+    line-height: 0;
+}
