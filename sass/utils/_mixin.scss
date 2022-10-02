@@ -4,3 +4,8 @@
     line-height:calc($lh/$fs);
     letter-spacing: $ls;
 }
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
