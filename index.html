@@ -18,58 +18,62 @@
         <div class="container header-nav">
             <a href="./index.html" class="logo navigation__logo"><span style="color:#2196F3">Web</span><span
                     style="color:#000000">Studio</span></a>
+            <button type="button" class="mobile-menu-btn js-open-menu js-close-menu"" aria-expanded="false" aria-controls="close-btn-id">
+                <svg width="40" height="40" aria-label="Виклик мобільного меню">
+                    <use class="mobile-menu-btn__open" href="./images/icons.svg#icon-menu"></use>
+                    <use class="mobile-menu-btn__close" href="./images/icons.svg#icon-close-menu"></use>
+                </svg>
+            </button>
+            <div class="mobile-menu-window js-menu-container">
+                <div class="container mobile-menu-container">
+                    <ul class="mobile-menu">
+                        <li class="mobile-menu__labels"><a class="mobile-menu__link" href="./index.html">Студія</a>
+                        </li>
+                        <li class="mobile-menu__labels"><a class="mobile-menu__link" href="./portfolio.html">Портфоліо</a>
+                        </li>
+                        <li class="mobile-menu__labels"><a class="mobile-menu__link" href="#">Контакти</a></li>
+                    </ul>
+                    <!-- <button type="button" class="mobile-menu-close js-close-menu">
+                        <svg width="40" height="40">
+                            <use class="mobile-menu-close__icon" href="./images/icons.svg#icon-close-menu"></use>
+                        </svg>
+                    </button> -->
+                    <div class="email-phone-flex">
+                        <ul class="email-phone">
+                            <li class="email-phone__contacts">
+                                <a href="mailto:info@devstudio.com" class="email-phone__link"><svg width="16" height="12"
+                                        class="email-phone__icon">
+                                        <use href="./images/icons.svg#icon-envelope"></use>
+                                    </svg>info@devstudio.com</a>
+                            </li>
+                            <li class="email-phone__contacts"><a href="tel:+380961111111" class="email-phone__link">
+                                    <svg width="16" height="12" class="email-phone__icon">
+                                        <use href="./images/icons.svg#icon-smartphone"></use>
+                                    </svg>+38 096 111 11 11</a></li>
+                        </ul>
+                    </div>
+                    <ul class="socials-labels">
+                        <li class="socials-labels__list"><a class="socials-labels__link" href="https://www.instagram.com/">Instagram</a>
+                        </li>
+                        <li class="socials-labels__list"><a class="socials-labels__link" href="https://twitter.com/">Twitter</a></li>
+                        <li class="socials-labels__list"><a class="socials-labels__link" href="https://www.facebook.com/">Facebook</a></li>
+                        <li class="socials-labels__list"><a class="socials-labels__link" href="https://www.linkedin.com/">LinkedIn</a></li>
+                    </ul>
+                </div>
             <nav class="navigation">
                 <ul class="menu">
                     <li class="menu__item"><a href="./index.html" class="menu__link_current">Студія</a></li>
                     <li class="menu__item"><a href="./portfolio.html" class="menu__link">Портфоліо</a></li>
                     <li class="menu__item"><a href="#" class="menu__link">Контакти</a></li>
                 </ul>
-            </nav>
-            <button type="button" class="mobile-menu-btn js-open-menu">
-                <svg width="40" height="40" aria-label="Виклик мобільного меню">
-                    <use class="mobile-menu-btn__open" href="./images/icons.svg#icon-menu"></use>
-                </svg>
-            </button>
-            <div class="email-phone-flex">
-                <ul class="email-phone">
-                    <li class="email-phone__contacts">
-                    <a href="mailto:info@devstudio.com" class="email-phone__link"><svg width="16" height="12" class="email-phone__icon">
-                        <use href="./images/icons.svg#icon-envelope"></use>
-                    </svg>info@devstudio.com</a>
+                <ul class="phone-email">
+                    <li class="phone-email__contacts"><a href="tel:+380961111111" class="phone-email__phone">+38 096 111 11 11</a></li>
+                    <li class="phone-email__contacts"><a href="mailto:info@devstudio.com"
+                            class="phone-email__email">info@devstudio.com</a>
                     </li>
-                
-                    <li class="email-phone__contacts"><a href="tel:+380961111111" class="email-phone__link">
-                    <svg width="16" height="12"
-                    class="email-phone__icon">
-                    <use href="./images/icons.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a></li>
                 </ul>
-            </div>
-        </div>
-        <div class="mobile-menu-window js-menu-container">
-            <div class="container mobile-menu-container">
-            <ul class="mobile-menu">
-                <li class="mobile-menu__labels"><a class="mobile-menu__link" href="./index.html">Студія</a>
-                </li>
-                <li class="mobile-menu__labels"><a class="mobile-menu__link"href="./portfolio.html">Портфоліо</a>
-                </li>
-                <li class="mobile-menu__labels"><a class="mobile-menu__link" href="#">Контакти</a></li>
-            </ul>
-            <button type="button" class="mobile-menu-close js-close-menu">
-                <svg width="40" height="40">
-                    <use class="mobile-menu-close__icon" href="./images/icons.svg#icon-close-menu"></use>
-                </svg>
-            </button>
-            <ul class="phone-email">
-                <li class="phone-email__contacts"><a href="tel:+380961111111" class="phone-email__phone">+38 096 111 11 11</a></li>
-                <li class="phone-email__contacts"><a href="mailto:info@devstudio.com" class="phone-email__email">info@devstudio.com</a>
-                </li>            
-            </ul>
-            <ul class="socials-labels">
-                <li class="socials-labels__list"><a class="socials-labels__link"href="https://www.instagram.com/">Instagram</a></li>
-                <li class="socials-labels__list"><a class="socials-labels__link" href="https://twitter.com/">Twitter</a></li>
-                <li class="socials-labels__list"><a class="socials-labels__link" href="https://www.facebook.com/">Facebook</a></li>
-                <li class="socials-labels__list"><a class="socials-labels__link" href="https://www.linkedin.com/">LinkedIn</a></li>
-            </ul>
+            </nav>
+            
             </div>
         </div>
     </header>
@@ -80,7 +84,7 @@
                 <button type="button" class="modal-button" data-modal-open>Замовити послугу</button>
             </div>
         </section>
-        <section class="special">
+        <section class="special section">
             <div class="container">
                 <h2 class="features" hidden>Особливості</h2>
                     <ul class="titles">
@@ -123,7 +127,7 @@
                     </ul>
                 </div>
         </section>
-        <section class="section">
+        <section class="section main-skills">
             <div class="container">            
                 <h2 class="skills">Чим ми займаємося</h2>
                     <ul class="images">

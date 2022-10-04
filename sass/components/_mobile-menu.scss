@@ -1,5 +1,30 @@
-@media screen and(min-width:320px) and (max-width:479px), 
-screen and (min-width:480px) and (max-width:767px) {
+    .mobile-menu-btn {
+        display: inline-flex;
+        padding: 0;
+        margin: 0;
+        border: none;
+        background-color: transparent;
+        line-height: 0;
+        transition: cursor 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            &:hover,
+            &:focus {
+                cursor: pointer;
+                fill: var(--accent-color);
+            }
+        }
+        
+    .mobile-menu-btn .mobile-menu-btn__close{
+        display: none;
+    }
+    .mobile-menu-btn.is-open .mobile-menu-btn__close{
+        display: block;
+        }
+
+    .mobile-menu-btn.is-open .mobile-menu-btn__open {
+        display: none;
+         }
+
     .mobile-menu-window{
         position: fixed;
         top: 0;
@@ -10,9 +35,10 @@ screen and (min-width:480px) and (max-width:767px) {
         background-color: teal;
         opacity: 0;
         visibility: hidden;
-        pointer-events: none;  
+        pointer-events: none;
+        transform: translate(100%);  
     }
-    .mobile-menu-window .is-open{
+    .mobile-menu-window.is-open{
         opacity: 1;
         visibility: visible;
         pointer-events: auto;
@@ -25,7 +51,6 @@ screen and (min-width:480px) and (max-width:767px) {
         height: 100vh;
         display: flex;
         flex-direction: column;
-
     }
     .mobile-menu__labels:not(:last-child){
         margin-bottom: 32px;
@@ -40,26 +65,7 @@ screen and (min-width:480px) and (max-width:767px) {
                 color: var(--accent-color);
             }
     }
-    .mobile-menu-close{
-        position: absolute;
-        top: 0;
-        right: 0;
-        display: inline-block;
-        padding-top: 10px;
-        margin: 0;
-        border: none;
-        background-color: transparent;
-        line-height: 0;
-        transition: cursor 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        
-            &:hover,
-            &:focus {
-                cursor: pointer;
-                fill: var(--accent-color);
-            }
-    }
-    .phone-email{
+   .phone-email{
         margin-top: auto;
        }
     .phone-email__contacts:not(:last-child){
@@ -90,11 +96,21 @@ screen and (min-width:480px) and (max-width:767px) {
                 transform: rotate(90deg);
                 margin-left:10px;
         }
-}
-}
+    }
 
-@media screen and(min-width:768px){
-    .mobile-menu-window {
-    display: none;
+@media screen and(min-width:768px) {
+    .mobile-menu-btn {
+        display: none;
+        }
 }
-}
+   // .mobile-menu-btn{
+   // position: absolute;
+   // top: 0;
+   // right: 0;
+   // display: inline-block;
+   // // padding-top: 10px;
+   // margin: 0;
+   // border: none;
+   // background-color: transparent;
+
+   // }
