@@ -48,9 +48,15 @@
         flex-basis: calc((100% - 2*30px)/2);
         align-items:unset;
     }
-    
 }
 
+@media screen and (min-width:1200px) {
+    .team-label{
+        margin-bottom: 50px;
+        @include font(700, 36px, 42px, 0.03em);
+              
+    }   
+}
 
 
 // .team-list {

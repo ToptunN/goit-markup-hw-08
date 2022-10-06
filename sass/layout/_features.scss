@@ -1,9 +1,3 @@
-// .special {
-    // padding-top: 60px;
-    // padding-bottom: 60px;
-    // margin-left: auto;
-    // margin-right: auto;
-// }
 .titles__list {
     margin: auto;
     margin-left: auto;
@@ -19,6 +13,7 @@
     @include font(700, 14px, 16px, 0.03em);
     text-transform: uppercase;
     color: var(--headlines-title);
+    text-align: center;
     }
 
 .titles__text {
@@ -31,19 +26,13 @@
     }
 .titles__icons-bg {
     @extend %align;
-    min-width: 450px;
+    // min-width: 450px;
     height: 120px;
     margin-bottom: 30px;
     background-color: var(--bcgsecond-color);
     border-radius: 4px;
 }
-  .titles__label {
-      margin-bottom: 10px;
-      @include font(700, 14px, 16px, 0.03em);
-      text-transform: uppercase;
-      color: var(--headlines-title);
-      text-align: center;
-      }
+
 
 @media screen and (min-width:768px) {
     .titles{

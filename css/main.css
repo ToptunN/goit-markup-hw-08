@@ -54,7 +54,7 @@ body {
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
-    background-color: burlywood;
+    background-color: beige;
     margin-left: auto;
     margin-right: auto;
   }
@@ -79,6 +79,12 @@ body {
   margin-right: auto;
 }
 
+@media screen and (min-width: 768px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 .logo {
   font-family: "Raleway";
   font-weight: 700;
@@ -860,6 +866,7 @@ footer .logo {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--headlines-title);
+  text-align: center;
 }
 
 .titles__text {
@@ -872,22 +879,10 @@ footer .logo {
 }
 
 .titles__icons-bg {
-  min-width: 450px;
   height: 120px;
   margin-bottom: 30px;
   background-color: var(--bcgsecond-color);
   border-radius: 4px;
-}
-
-.titles__label {
-  margin-bottom: 10px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.1428571429;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--headlines-title);
-  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -1016,11 +1011,20 @@ footer .logo {
     align-items: unset;
   }
 }
+@media screen and (min-width: 1200px) {
+  .team-label {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1666666667;
+    letter-spacing: 0.03em;
+  }
+}
 .clients-label {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.1666666667;
+  font-size: 28px;
+  line-height: 1.1785714286;
   letter-spacing: 0.03em;
   text-align: center;
   letter-spacing: 0.03em;
@@ -1029,14 +1033,16 @@ footer .logo {
 
 .clients-logos {
   display: flex;
-  justify-content: space-between;
-  margin-right: auto;
-  margin-left: auto;
-  column-gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.logos-list {
+  flex-basis: calc((100% - 60px) / 2);
 }
 
 .logos-bg {
-  width: 170px;
   height: 92px;
   border: 1px solid var(--icon-color);
   border-radius: 4px;
@@ -1054,6 +1060,23 @@ footer .logo {
   fill: var(--accent-color);
 }
 
+@media screen and (min-width: 768px) {
+  .logos-list {
+    flex-basis: calc((100% - 90px) / 3);
+  }
+}
+@media screen and (min-width: 768px) {
+  .clients-logos {
+    flex-wrap: nowrap;
+  }
+  .clients-label {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1666666667;
+    letter-spacing: 0.03em;
+  }
+}
 .portfolio-page .filters {
   background-color: var(--bcgsecond-color);
 }
