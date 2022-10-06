@@ -79,7 +79,7 @@ body {
   margin-right: auto;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -1065,7 +1065,7 @@ footer .logo {
     flex-basis: calc((100% - 90px) / 3);
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .clients-logos {
     flex-wrap: nowrap;
   }

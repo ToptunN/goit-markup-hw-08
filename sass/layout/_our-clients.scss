@@ -45,14 +45,11 @@
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
     .clients-logos{
         flex-wrap: nowrap;
         }
-    .logos-list {
-
-        }
-    .clients-label {
+        .clients-label {
         margin-bottom: 50px;
         @include font(700, 36px, 42px, 0.03em);
         }
