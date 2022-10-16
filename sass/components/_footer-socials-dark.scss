@@ -3,16 +3,12 @@
     @include font(700, 14px, 16px, 0.03em);
     text-transform: uppercase;
     color: var(--second-text-color);
-}
-
-.footer-middle {
-    margin-left: 70px;
-    margin-right: auto;
+    text-align: center;
 }
 
 .footer-socials {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 10px;
 }
@@ -39,5 +35,8 @@
             }
 }
 
-
-
+@media screen and(min-width:1200px) {
+    .footer-social-cta {
+        text-align: left;
+    }
+}
