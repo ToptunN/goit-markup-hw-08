@@ -27,17 +27,14 @@
           padding-top: 26px;
           padding-bottom: 26px;
       }
-
       .navigation__logo {
           margin-right: 87px;
       }
-
       .menu {
           display: flex;
           justify-content: center;
           column-gap: 50px;
       }
-
       .menu__link {
           @include font(500, 14px, 16px, 0.02em);
           color: var(--title-text-color);
@@ -47,6 +44,9 @@
           &:focus {
               color: var(--accent-color);
           }
+      }
+      .menu__item{
+        position: relative;
       }
     
       .menu .menu__link_current {
