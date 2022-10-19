@@ -203,6 +203,9 @@ body {
     letter-spacing: 0.02em;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+  .email-phone__email {
+    margin-bottom: 10px;
+  }
   .email-phone__icon {
     fill: var(--main-text-color);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -211,6 +214,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    justify-content: flex-start;
     gap: 10px;
   }
   .email-phone .email-phone__link:hover, .email-phone .email-phone__link:focus {
@@ -232,6 +236,9 @@ body {
     gap: 30px;
     margin-left: auto;
     padding-left: auto;
+  }
+  .email-phone__email {
+    margin-bottom: 0;
   }
 }
 .mobile-menu-btn {
@@ -265,6 +272,7 @@ body {
 }
 
 .mobile-menu-window {
+  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
@@ -305,6 +313,9 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobile-menu__link:hover, .mobile-menu__link:focus {
+  color: var(--accent-color);
+}
+.mobile-menu__link_current {
   color: var(--accent-color);
 }
 
@@ -348,6 +359,7 @@ body {
   color: var(--accent-color);
 }
 .socials-labels__link::after {
+  display: inline-block;
   content: "";
   border: 1px solid rgba(33, 33, 33, 0.2);
   transform: rotate(90deg);
@@ -412,8 +424,9 @@ body {
   position: absolute;
   top: 38%;
   left: 50%;
-  width: 450px;
-  height: 609px;
+  width: 100%;
+  max-width: 450px;
+  min-height: 609px;
   transform: translate(-50%, -50%);
   background-color: var(--bcg-color);
 }
@@ -905,7 +918,7 @@ footer .logo {
 }
 
 .hero__text {
-  width: 80%;
+  width: 95%;
   margin: 0 auto 30px;
   font-weight: 900;
   font-size: 26px;
@@ -931,6 +944,11 @@ footer .logo {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/index.photos/hero-bcg-tablet@2x.jpg);
   }
 }
+@media screen and (min-width: 768px) {
+  .hero__text {
+    width: 60%;
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero {
     padding-top: 200px;
@@ -941,7 +959,6 @@ footer .logo {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/index.photos/hero-bcg-desktop.jpg);
   }
   .hero__text {
-    width: 60%;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.3636363636;
@@ -1003,6 +1020,9 @@ footer .logo {
   .titles__icons-bg {
     min-width: 354px;
   }
+  .titles__label {
+    text-align: left;
+  }
 }
 @media screen and (min-width: 1200px) {
   .titles__list {
@@ -1017,6 +1037,9 @@ footer .logo {
   }
 }
 @media screen and (min-width: 1200px) {
+  .main-skills {
+    padding-top: 0;
+  }
   .skills {
     margin-bottom: 50px;
     font-weight: 700;
@@ -1209,6 +1232,7 @@ footer .logo {
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--title-text-color);
+  background-color: var(--bcgsecond-color);
   cursor: pointer;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1224,6 +1248,9 @@ footer .logo {
 }
 
 .img-subscription {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 20px 24px;
   border-right: 1px solid #EEEEEE;
   border-bottom: 1px solid #EEEEEE;
@@ -1296,5 +1323,12 @@ footer .logo {
     flex-basis: 50%;
     gap: 30px;
     flex-wrap: wrap;
+  }
+  .work-title {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 2.1176470588;
+    letter-spacing: 0.06em;
+    width: 90%;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -7,8 +7,9 @@
     position: absolute;
     top: 38%;
     left: 50%;
-    width: 450px;
-    height: 609px;
+    width: 100%;
+    max-width: 450px;
+    min-height: 609px;
     transform: translate(-50%, -50%);
     background-color: var(--bcg-color);
 }

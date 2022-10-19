@@ -31,6 +31,7 @@
             }
     }
     .mobile-menu-window {
+        width: 100%;
         position: fixed;
         top: 0;
         left: 0;
@@ -71,6 +72,9 @@
             &:focus {
                 color: var(--accent-color);
             }
+            &_current {
+                color: var(--accent-color);
+            }
     }
    .phone-email{
         margin-top: auto;
@@ -98,10 +102,12 @@
         @include font(500,18px,22px,00.02em);
         color: var(--accent-color);
             &::after{
+                display: inline-block;
                 content: "";
                 border: 1px solid rgba(33, 33, 33, 0.2);
                 transform: rotate(90deg);
                 margin-left:10px;
+           
         }
     }
 

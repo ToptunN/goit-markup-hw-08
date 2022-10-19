@@ -13,11 +13,13 @@
         margin-left: auto;
         padding-left: auto;
     }
-    
     .email-phone .email-phone__link {
         color: var(--main-text-color);
         @include font(500, 12px, 14px, 0.02em);
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .email-phone__email{
+        margin-bottom: 10px;
     }
     .email-phone__icon {
         fill: var(--main-text-color);
@@ -25,6 +27,7 @@
     }
     .email-phone__link {
         @include flex;
+        justify-content: flex-start;
         gap: 10px;
             .email-phone &:hover,
             .email-phone &:focus {
@@ -47,6 +50,9 @@
         gap: 30px;
         margin-left: auto;
         padding-left: auto;
+    }
+    .email-phone__email {
+        margin-bottom: 0;
     }
 }
 // .email-phone__contacts {
