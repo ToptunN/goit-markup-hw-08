@@ -1270,6 +1270,10 @@ footer .logo {
   color: var(--title-text-color);
 }
 
+.works-card {
+  width: 354px;
+}
+
 .works-link {
   display: flex;
   flex-direction: column;
