@@ -41,19 +41,21 @@
                     </li>
                 </ul>
             </div>
-            <button type="button" class="mobile-menu-btn js-open-menu" aria-expanded="false" aria-controls="close-btn-id">
+            <button type="button" class="mobile-menu-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
                 <svg width="40" height="40" aria-label="Виклик мобільного меню">
                     <use class="mobile-menu-btn__open" href="./images/icons.svg#icon-menu"></use>
                 </svg>
             </button>
                  
-            <div class="mobile-menu-window js-menu-container ">
+            <div class="mobile-menu-window js-menu-container" id="mobile-menu">
+                
                 <div class="container mobile-menu-container">
                 <button type="button" class="close-menu-btn js-close-menu" aria-expanded="false" aria-controls="close-btn-id">
                 <svg width="40" height="40" aria-label="Кнопка закриття мобільного меню">
-                    <use class="close-menu-btn__close" href="./images/icons.svg#icon-close-menu"></use>
+                    <use class="close-menu-btn__close" 
+                    href="./images/icons.svg#icon-close-menu" id="close-btn-id"></use>
                 </svg>
-            </button>
+                </button>
                     <ul class="mobile-menu">
                         <li class="mobile-menu__labels"><a class="mobile-menu__link mobile-menu__link_current" href="./index.html">Студія</a>
                         </li>

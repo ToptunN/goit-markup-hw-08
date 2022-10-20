@@ -92,25 +92,35 @@
     }
     .socials-labels{
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
-        gap: 20px;  
         margin-top: auto;      
     }
 
     .socials-labels__link{
         @include font(500,18px,22px,00.02em);
         color: var(--accent-color);
-            &::after{
-                display: inline-block;
-                content: "";
-                border: 1px solid rgba(33, 33, 33, 0.2);
-                transform: rotate(90deg);
-                margin-left:10px;
-           
-        }
+        padding: 0 10px;
     }
-
+    .socials-labels__list:not(:last-child){
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
+// @media screen and(max-width:479) {
+//     .mobile-menu__link {
+//         @include font(500, 35px, 41px, 0.02em);
+//     }
+//     .phone-email__phone {
+//         @include font(500, 30px, 35px, 0.02em);
+//     }
+//     .phone-email__email {
+//         @include font(500, 21px, 25px, 0.02em);
+//     }
+//     .socials-labels__link {
+//         @include font(500, 16px, 19px, 00.02em);
+//     }
+// }
+     
 @media screen and(min-width:768px) {
     .mobile-menu-btn {
         display: none;
