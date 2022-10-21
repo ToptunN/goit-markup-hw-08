@@ -366,9 +366,6 @@ body {
 }
 
 @media screen and (min-width: 320px) and (max-width: 479px) {
-  .mobile-menu-container {
-    width: 320px;
-  }
   .mobile-menu__link {
     font-weight: 500;
     font-size: 35px;

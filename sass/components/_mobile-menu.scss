@@ -107,9 +107,6 @@
         border-right: 1px solid rgba(33, 33, 33, 0.2);
     }
 @media screen and(min-width:320px)and (max-width:479px) {
-    .mobile-menu-container {
-        width: 320px;
-    }
     .mobile-menu__link {
         @include font(500, 35px, 41px, 0.02em);
     }
