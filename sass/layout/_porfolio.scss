@@ -120,8 +120,15 @@
         gap: 30px;
         flex-wrap: wrap;
     }
-    .work-title{
-        width: 90%;
-    }
+    // .work-title{
+    //     width: 90%;
+    // }
    
+}
+@media screen and(min-width:1200px) {
+    .img-subscription {
+            flex-grow: 0;}
+    .works-card {
+            width: 370px;
+        }
 }
