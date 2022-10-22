@@ -447,7 +447,7 @@ body {
 .modal {
   padding: 40px;
   position: absolute;
-  top: 38%;
+  top: 50%;
   left: 50%;
   width: 100%;
   max-width: 450px;
@@ -472,14 +472,8 @@ body {
   cursor: pointer;
 }
 
-@media screen and (min-width: 768px) {
-  .modal {
-    top: 47%;
-  }
-}
 @media screen and (min-width: 1200px) {
   .modal {
-    top: 50%;
     width: 528px;
     height: 581px;
   }
@@ -1297,10 +1291,6 @@ footer .logo {
   color: var(--title-text-color);
 }
 
-.works-card {
-  width: 354px;
-}
-
 .works-link {
   display: flex;
   flex-direction: column;
@@ -1353,8 +1343,11 @@ footer .logo {
     gap: 30px;
     flex-wrap: wrap;
   }
+  .works-card {
+    width: 354px;
+  }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) and (min-width: 1200px) {
   .img-subscription {
     flex-grow: 0;
   }
